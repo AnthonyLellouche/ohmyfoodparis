@@ -16,6 +16,33 @@ body {
   font-weight: 500;
   width: 200px; }
 
+.functioning__number {
+  background-color: #9356DC;
+  border-radius: 15px;
+  width: 7%;
+  height: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; }
+
+.functioning__step {
+  display: flex;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+  height: 29px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 25px;
+  width: 320px;
+  gap: 30px;
+  box-shadow: 0px 5px 15px -4px #000000;
+  font-weight: 500; }
+  .functioning__step i {
+    font-size: 25px;
+    color: #7e7e7e; }
+
 /* Tablette */
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -49,3 +76,15 @@ body {
     margin-top: 0; }
 
 /* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .functioning {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 10px; }
+  .functioning-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 30px;
+    padding-bottom: 70px; } }

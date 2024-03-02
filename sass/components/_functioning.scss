@@ -1,0 +1,30 @@
+.functioning {
+  &__number {
+    background-color: $color-primary;
+    border-radius: 15px;
+    width: 7%;
+    height: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+  &__step {
+    display: flex;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+    height: 29px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 25px;
+    width: 320px;
+    gap: 30px;
+    box-shadow: 0px 5px 15px -4px #000000;
+    font-weight: 500;
+    & i {
+      font-size: 25px;
+      color: #7e7e7e;
+    }
+  }
+}
