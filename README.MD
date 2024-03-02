@@ -4,6 +4,6 @@
 
 Création d'un site "mobile first" qui répertorie les menus de restaurants gastronomiques
 
-_By O.C_
+Créations de plusieurs dossiers comprenants plusieurs fichiers scss.
 
-http(s)://<AnthonyLellouche>.github.io/<cineBlog>
+_By O.C_
