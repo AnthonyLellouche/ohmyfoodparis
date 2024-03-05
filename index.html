@@ -15,70 +15,169 @@
       <div class="logo">
         <img src="./assets/images/logo/ohmyfood@2x.svg" alt="logo oh my food" />
       </div>
-
-      <div class="logo__recherche">
-        <i class="fa-solid fa-location-dot"></i>Paris, Belleville
-      </div>
     </header>
+    <div class="logo__recherche">
+      <i class="fa-solid fa-location-dot"></i>Paris, Belleville
+    </div>
     <div class="section-page">
       <h1>Réservez le menu qui vous convient</h1>
       <h2>
         Découvrez des restaurants d’exception, sélectionnés par nos soins.
       </h2>
-      <div class="button-discover">Explorer nos restaurants</div>
+      <button class="button-discover">Explorer nos restaurants</button>
     </div>
-    <section class="functioning-section">
+    <menu class="functioning-section">
       <h3>Fonctionnement</h3>
-      <div class="functioning">
-        <div class="functioning__number">1</div>
-        <div class="functioning__step">
-          <i class="fa-solid fa-mobile-screen"></i>Choississez un restaurant
-        </div>
-      </div>
-      <div class="functioning">
-        <div class="functioning__number">2</div>
-        <div class="functioning__step">
-          <i class="fa-solid fa-list"></i>Composez votre menu
-        </div>
-      </div>
-      <div class="functioning">
-        <div class="functioning__number">3</div>
-        <div class="functioning__step">
-          <i class="fa-solid fa-store"></i>Dégustez au restaurant
-        </div>
-      </div>
-    </section>
+      <ul>
+        <li class="functioning">
+          <span class="functioning__number">1</span>
+          <div class="functioning__step">
+            <i class="fa-solid fa-mobile-screen"></i>Choississez un restaurant
+          </div>
+        </li>
+        <li class="functioning">
+          <span class="functioning__number">2</span>
+          <div class="functioning__step">
+            <i class="fa-solid fa-list"></i>Composez votre menu
+          </div>
+        </li>
+        <li class="functioning">
+          <span class="functioning__number">3</span>
+          <div class="functioning__step">
+            <i class="fa-solid fa-store"></i>Dégustez au restaurant
+          </div>
+        </li>
+      </ul>
+    </menu>
     <section class="restaurant-section">
       <h3>Restaurants</h3>
       <div class="restaurant-cards">
-        <a href="./pages/premier.html">
-        <article class="card">
-          <img
-            src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-            alt="Plat posé sur une table d'un client dans un restaurant"
-          />
-          <div class="restaurant-cards-content">
-            <div class="restaurant-cards__text">
-              <h3 class="restaurant-cards__new">Nouveau</h3>
-              <p class="restaurant-cards__name">La palette du goût</p>
-              <p class="restaurant-cards__location">Ménilmontant</p>
-              <div class="restaurant-cards__rating">
-                <label class="heart-label">
-                  <input type="checkbox" class="heart-checkbox" aria-label="none"/>
-                  <i
-                    class="fa-regular fa-heart heart-icon"
-                    aria-hidden="true"
-                  ></i>
-                  <i
-                    class="fa-solid fa-heart heart-icon-filled"
-                    aria-hidden="true"
-                  ></i>
-                </label>
+        <a href="./pages/palette-gout.html">
+          <article class="card">
+            <img
+              src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+              alt="Plat posé sur une table d'un client dans un restaurant"
+            />
+            <div class="restaurant-cards-content">
+              <div class="restaurant-cards__text">
+                <span class="restaurant-cards__new">Nouveau</span>
+                <p class="restaurant-cards__name">La palette du goût</p>
+                <p class="restaurant-cards__location">Ménilmontant</p>
+                <div class="restaurant-cards__rating">
+                  <label class="heart-label">
+                    <input
+                      type="checkbox"
+                      class="heart-checkbox"
+                      aria-label="none"
+                    />
+                    <i
+                      class="fa-regular fa-heart heart-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <i
+                      class="fa-solid fa-heart heart-icon-filled"
+                      aria-hidden="true"
+                    ></i>
+                  </label>
+                </div>
               </div>
             </div>
-          </div>
-        </article>
-      </a>
+          </article>
+        </a>
+        <a href="./pages/note-enchantee.html">
+          <article class="card">
+            <img
+              src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+              alt="Plat posé sur une table d'un client dans un restaurant"
+            />
+            <div class="restaurant-cards-content">
+              <div class="restaurant-cards__text">
+                <span class="restaurant-cards__new">Nouveau</span>
+                <p class="restaurant-cards__name">La note enchantée</p>
+                <p class="restaurant-cards__location">Charonne</p>
+                <div class="restaurant-cards__rating">
+                  <label class="heart-label">
+                    <input
+                      type="checkbox"
+                      class="heart-checkbox"
+                      aria-label="none"
+                    />
+                    <i
+                      class="fa-regular fa-heart heart-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <i
+                      class="fa-solid fa-heart heart-icon-filled"
+                      aria-hidden="true"
+                    ></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </article>
+        </a>
+        <a href="./pages/francaise.html">
+          <article class="card">
+            <img
+              src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+              alt="Plat posé sur une table d'un client dans un restaurant"
+            />
+            <div class="restaurant-cards-content">
+              <div class="restaurant-cards__text">
+                <p class="restaurant-cards__name">À la française</p>
+                <p class="restaurant-cards__location">Cité Rouge</p>
+                <div class="restaurant-cards__rating">
+                  <label class="heart-label">
+                    <input
+                      type="checkbox"
+                      class="heart-checkbox"
+                      aria-label="none"
+                    />
+                    <i
+                      class="fa-regular fa-heart heart-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <i
+                      class="fa-solid fa-heart heart-icon-filled"
+                      aria-hidden="true"
+                    ></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </article>
+        </a>
+        <a href="./pages/delice-sens.html">
+          <article class="card">
+            <img
+              src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+              alt="Plat posé sur une table d'un client dans un restaurant"
+            />
+            <div class="restaurant-cards-content">
+              <div class="restaurant-cards__text">
+                <p class="restaurant-cards__name">Le délice des sens</p>
+                <p class="restaurant-cards__location">Folie-Méricourt</p>
+                <div class="restaurant-cards__rating">
+                  <label class="heart-label">
+                    <input
+                      type="checkbox"
+                      class="heart-checkbox"
+                      aria-label="none"
+                    />
+                    <i
+                      class="fa-regular fa-heart heart-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <i
+                      class="fa-solid fa-heart heart-icon-filled"
+                      aria-hidden="true"
+                    ></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </article>
+        </a>
       </div>
     </section>
   </body>

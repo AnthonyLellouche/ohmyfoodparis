@@ -4,6 +4,8 @@ body {
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px; }
+  body h3 {
+    font-size: 24px; }
 
 .button-discover {
   display: flex;
@@ -14,7 +16,9 @@ body {
   padding: 18px;
   color: white;
   font-weight: 500;
-  width: 200px; }
+  width: 200px;
+  border: none;
+  cursor: pointer; }
 
 .functioning__number {
   font-size: 14px;
@@ -53,49 +57,48 @@ body {
   border-radius: 20px;
   position: relative; }
 
-.restaurant-cards img {
-  width: 100%;
-  height: 190px;
-  object-fit: cover;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px; }
-  .restaurant-cards img a {
-    background-color: blue; }
-
-.restaurant-cards__new {
-  background-color: #99e2d0;
-  color: #008766;
-  width: 20%;
-  font-size: 14px;
-  font-weight: 500;
-  justify-content: center;
+.restaurant-cards {
+  gap: 20px;
   display: flex;
-  align-items: center;
-  padding: 5px;
-  position: absolute;
-  top: 0;
-  right: 10px;
-  border-radius: 2px; }
-
-.restaurant-cards__text {
-  padding-left: 15px;
-  padding-bottom: 10px; }
-
-.restaurant-cards__name {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 5px; }
-
-.restaurant-cards__location {
-  font-size: 17px;
-  font-weight: 300;
-  margin-top: 0px; }
-
-.restaurant-cards__rating {
-  bottom: 40px;
-  right: 35px;
-  display: flex;
-  position: absolute; }
+  flex-direction: column; }
+  .restaurant-cards img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; }
+    .restaurant-cards img a {
+      background-color: blue; }
+  .restaurant-cards__new {
+    background-color: #99e2d0;
+    color: #008766;
+    width: 13%;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    border-radius: 2px; }
+  .restaurant-cards__text {
+    padding-left: 15px;
+    padding-bottom: 10px; }
+  .restaurant-cards__name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px; }
+  .restaurant-cards__location {
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 0px; }
+  .restaurant-cards__rating {
+    bottom: 40px;
+    right: 35px;
+    display: flex;
+    position: absolute; }
 
 .heart-label {
   display: inline-block; }
@@ -155,14 +158,13 @@ body {
     display: flex;
     flex-direction: column;
     padding: 30px 10px 70px 20px; }
-    .functioning-section h3 {
-      font-size: 24px;
-      margin-bottom: 10px; }
+    .functioning-section ul {
+      padding-left: 0; }
   .restaurant-section {
     background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
-    padding: 30px 10px 70px 20px; }
+    padding: 30px 25px 70px 25px; }
     .restaurant-section a {
       text-decoration: none;
       color: inherit;
