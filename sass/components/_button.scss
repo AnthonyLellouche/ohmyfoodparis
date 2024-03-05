@@ -1,11 +1,18 @@
 .button-discover {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    background-image: linear-gradient(to right top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    border-radius: 25px;
-    padding: 18px;
-    color: white;
-    font-weight: 500;
-    width: 200px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    to right top,
+    #9356dc,
+    #b35cdc,
+    #cf64dc,
+    #e86edb,
+    #ff79da
+  );
+  border-radius: 25px;
+  padding: 18px;
+  color: white;
+  font-weight: 500;
+  width: 200px;
 }

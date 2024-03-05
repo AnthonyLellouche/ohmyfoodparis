@@ -11,7 +11,7 @@
     font-size: 18px;
     font-weight: 300;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   h1 {
@@ -28,14 +28,29 @@
     display: flex;
     align-items: center;
     position: relative;
-    padding-left: 10px;
   }
 
   .functioning-section {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    padding-top: 30px;
-    padding-bottom: 70px;
+    padding: 30px 10px 70px 20px;
+
+    & h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .restaurant-section {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px 70px 20px;
+
+    & a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
   }
 }

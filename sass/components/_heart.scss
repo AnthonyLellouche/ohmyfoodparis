@@ -1,0 +1,26 @@
+.heart-label {
+  display: inline-block;
+
+  .heart-checkbox {
+    display: none;
+
+    &:checked + .heart-icon {
+      display: none;
+    }
+
+    &:checked ~ .heart-icon-filled {
+      display: inline;
+      color: #cf64dc;
+    }
+  }
+
+  .heart-icon,
+  .heart-icon-filled {
+    font-size: 25px;
+    display: inline;
+  }
+
+  .heart-icon-filled {
+    display: none;
+  }
+}
