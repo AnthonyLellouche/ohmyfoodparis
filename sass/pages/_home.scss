@@ -19,6 +19,16 @@
   }
 }
 
+.logo__recherche {
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  box-shadow: inset 0 5px 5px -5px #333;
+  padding: 17px;
+  gap: 17px;
+  font-weight: 500;
+}
+
 @media (max-width: 1024px) {
 }
 
