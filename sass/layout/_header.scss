@@ -11,6 +11,12 @@
     & img {
       width: 50%;
     }
-
+    & i.fa-arrow-left {
+      position: absolute;
+      left: 30px;
+      top: 30px;
+      font-size: 25px;
+      color: black;
+    }
   }
 }

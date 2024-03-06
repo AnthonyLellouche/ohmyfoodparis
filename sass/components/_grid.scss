@@ -1,0 +1,74 @@
+.image-background {
+  & img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.menu-grid {
+  &_container {
+    background-color: #f6f6f6;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 35px 35px 0 0;
+    position: relative;
+    top: -40px;
+  }
+
+  &_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 45px;
+    padding-left: 15px;
+  }
+
+  &_subtitle {
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 300;
+    &::after {
+      content: "";
+      display: block;
+      width: 60%;
+      height: 2px; 
+      background-color: $color-tertiary;
+      position: absolute;
+      bottom: -8px;
+    }
+  }
+
+  &_card {
+    padding: 7px;
+    & button {
+      width: 100%;
+      border: none;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+.plat-container {
+  padding: 12px;
+  &_name {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    margin-bottom: 7px;
+  }
+  &_footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    &_surname {
+      font-weight: 300;
+    }
+    &_tarif {
+      font-weight: 700;
+    }
+  }
+}
