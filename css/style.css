@@ -60,7 +60,7 @@ body {
       display: block;
       width: 60%;
       height: 2px;
-      background-color: #99E2D0;
+      background-color: #99e2d0;
       position: absolute;
       bottom: -8px; }
   .menu-grid_card {
@@ -90,7 +90,7 @@ body {
 
 .functioning__number {
   font-size: 14px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 15px;
   width: 25px;
   height: 25px;
@@ -117,7 +117,7 @@ body {
     font-size: 25px;
     color: #7e7e7e; }
     .functioning__step i:hover {
-      color: #9356DC; }
+      color: #9356dc; }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
