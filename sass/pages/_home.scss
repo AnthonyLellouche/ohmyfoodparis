@@ -1,3 +1,16 @@
+.restaurant-section {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 100px 70px 100px;
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+}
+
 .section-page {
   display: flex;
   flex-direction: column;
@@ -32,7 +45,7 @@
 .functioning-section {
   display: flex;
   flex-direction: column;
-  padding: 30px 300px 70px 300px;
+  padding: 30px 100px 70px 100px;
   & ul {
     display: flex;
     flex-direction: row;
@@ -40,7 +53,7 @@
     padding-left: 0;
     & li {
       list-style-type: none;
-      width: 30%;
+      width: 32%;
     }
   }
 }
@@ -82,7 +95,6 @@
   }
 
   .restaurant-section {
-    background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
     padding: 30px 25px 70px 25px;
