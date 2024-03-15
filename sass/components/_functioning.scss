@@ -10,8 +10,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 2px;
-    top: 43px;
+    top: 615px;
   }
   &__step {
     font-size: 16px;
@@ -31,6 +30,19 @@
       &:hover {
         color: $color-primary;
       }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .functioning {
+    &__number {
+      left: 2px;
+      top: 43px;
     }
   }
 }

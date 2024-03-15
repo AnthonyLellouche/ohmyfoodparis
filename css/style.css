@@ -99,8 +99,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 2px;
-  top: 43px; }
+  top: 615px; }
 
 .functioning__step {
   font-size: 16px;
@@ -119,6 +118,12 @@ body {
     color: #7e7e7e; }
     .functioning__step i:hover {
       color: #9356DC; }
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .functioning__number {
+    left: 2px;
+    top: 43px; } }
 
 .card {
   background-color: white;
@@ -201,21 +206,24 @@ body {
   width: 100px;
   height: auto; }
 
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 25px; }
+  .logo img {
+    width: 10%; }
+
 /* Tablette */
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  .logo {
-    display: flex;
-    justify-content: center;
-    margin: 25px; }
-    .logo img {
-      width: 50%; }
-    .logo i.fa-arrow-left {
-      position: absolute;
-      left: 30px;
-      top: 30px;
-      font-size: 25px;
-      color: black; } }
+  .logo img {
+    width: 50%; }
+  .logo i.fa-arrow-left {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    font-size: 25px;
+    color: black; } }
 
 .section-page {
   display: flex;
@@ -223,7 +231,6 @@ body {
   justify-content: center;
   text-align: center;
   background-color: #f6f6f6;
-  box-shadow: inset 0 5px 5px -5px #333;
   padding: 50px; }
   .section-page h2 {
     font-size: 18px;
@@ -231,19 +238,39 @@ body {
     margin-top: 0;
     margin-bottom: 40px; }
   .section-page h1 {
-    margin-top: 0; }
+    margin-top: 0;
+    font-size: 2.5rem;
+    margin-bottom: 30px; }
 
 .logo__recherche {
   background-color: #eaeaea;
   display: flex;
   justify-content: center;
-  box-shadow: inset 0 5px 5px -5px #333;
   padding: 17px;
   gap: 17px;
   font-weight: 500; }
 
+.functioning-section {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 300px 70px 300px; }
+  .functioning-section ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0; }
+    .functioning-section ul li {
+      list-style-type: none;
+      width: 30%; }
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .section-page {
+    box-shadow: inset 0 5px 5px -5px #333; }
+    .section-page h1 {
+      font-size: 1.5rem; }
+  .logo__recherche {
+    box-shadow: inset 0 5px 5px -5px #333; }
   .functioning {
     display: flex;
     align-items: center;
@@ -253,7 +280,10 @@ body {
     flex-direction: column;
     padding: 30px 10px 70px 20px; }
     .functioning-section ul {
-      padding-left: 0; }
+      padding-left: 0;
+      flex-direction: column; }
+      .functioning-section ul li {
+        width: 100%; }
   .restaurant-section {
     background-color: #f6f6f6;
     display: flex;
