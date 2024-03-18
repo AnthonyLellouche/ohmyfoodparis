@@ -2,7 +2,7 @@
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
-  padding: 30px 100px 70px 100px;
+  padding: 30px 150px 70px 150px;
 
   & a {
     text-decoration: none;
@@ -45,7 +45,7 @@
 .functioning-section {
   display: flex;
   flex-direction: column;
-  padding: 30px 100px 70px 100px;
+  padding: 30px 150px 70px 150px;
   & ul {
     display: flex;
     flex-direction: row;
@@ -59,50 +59,58 @@
 }
 
 @media (max-width: 1024px) {
+  .functioning-section {
+    padding: 30px 70px 70px;
+  }
+
+  .restaurant-section {
+    padding: 30px 70px 70px;
+  }
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-  .section-page {
-    box-shadow: inset 0 5px 5px -5px #333;
+  /* Small devices (phones, less than 768px) */
+  @media (max-width: 767.98px) {
+    .section-page {
+      box-shadow: inset 0 5px 5px -5px #333;
 
-    h1 {
-      font-size: 1.5rem;
+      h1 {
+        font-size: 1.5rem;
+      }
     }
-  }
 
-  .logo__recherche {
-    box-shadow: inset 0 5px 5px -5px #333;
-  }
+    .logo__recherche {
+      box-shadow: inset 0 5px 5px -5px #333;
+    }
 
-  .functioning {
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
+    .functioning {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
 
-  .functioning-section {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 10px 70px 20px;
-    & ul {
-      padding-left: 0;
+    .functioning-section {
+      display: flex;
       flex-direction: column;
-      & li {
-        width: 100%;
+      padding: 30px 10px 70px 20px;
+      & ul {
+        padding-left: 0;
+        flex-direction: column;
+        & li {
+          width: 100%;
+        }
+      }
+    }
+
+    .restaurant-section {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 25px 70px 25px;
+
+      & a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
       }
     }
   }
 
-  .restaurant-section {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 25px 70px 25px;
-
-    & a {
-      text-decoration: none;
-      color: inherit;
-      cursor: pointer;
-    }
-  }
-}

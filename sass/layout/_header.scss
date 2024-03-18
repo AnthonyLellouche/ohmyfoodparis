@@ -1,9 +1,20 @@
+header {
+  max-width: 1440px;
+  position: relative;
+}
 .logo {
   display: flex;
   justify-content: center;
   margin: 25px;
   & img {
     width: 200px;
+  }
+  & i.fa-arrow-left {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    font-size: 25px;
+    color: black;
   }
 }
 
@@ -16,13 +27,6 @@
   .logo {
     & img {
       width: 50%;
-    }
-    & i.fa-arrow-left {
-      position: absolute;
-      left: 30px;
-      top: 30px;
-      font-size: 25px;
-      color: black;
     }
   }
 }

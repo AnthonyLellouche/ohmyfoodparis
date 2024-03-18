@@ -11,22 +11,21 @@
 }
 
 .menu-grid {
-  background-color: #f6f6f6;
   &_container {
     background-color: #f6f6f6;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 180px 50px;
+    margin: -40px 100px 0;
     border-radius: 35px 35px 0 0;
     position: relative;
-    top: -40px;
   }
 
   &_title {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-right: 45px;
     padding-left: 15px;
+    
   }
 
   &_subtitle {
@@ -75,6 +74,23 @@
     }
     &_tarif {
       font-weight: 700;
+    }
+  }
+}
+
+/* Tablette */
+@media (max-width: 1024px) {
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .menu-grid {
+    &_container {
+      margin: -40px 0;
+      padding: 0 10px 50px;
+    }
+    &_title {
+      justify-content: space-between;
     }
   }
 }
