@@ -314,7 +314,8 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(140, 140, 140, 0.3);
+  backdrop-filter: blur(7.5px);
   display: flex;
   justify-content: center;
   align-items: center;
