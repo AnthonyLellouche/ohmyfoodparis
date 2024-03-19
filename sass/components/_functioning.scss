@@ -34,11 +34,11 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $breakpoint-md) {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: $breakpoint-sm) {
   .functioning {
     &__number {
       left: 2px;

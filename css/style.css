@@ -87,6 +87,10 @@ body {
       font-weight: 700; }
 
 /* Tablette */
+@media (max-width: 1024px) {
+  .menu-grid_container {
+    padding: 0 90px 50px; } }
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   .menu-grid_container {

@@ -25,7 +25,6 @@
     align-items: center;
     padding-right: 45px;
     padding-left: 15px;
-    
   }
 
   &_subtitle {
@@ -75,11 +74,15 @@
 }
 
 /* Tablette */
-@media (max-width: 1024px) {
+@media (max-width: $breakpoint-md) {
+  .menu-grid {
+    &_container {
+      padding: 0 90px 50px;
+    }
+  }
 }
-
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: $breakpoint-sm) {
   .menu-grid {
     &_container {
       margin: -40px 0;
