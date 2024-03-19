@@ -25,7 +25,11 @@ body {
   font-weight: 500;
   width: 200px;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: 450ms; }
+  .button-discover:hover {
+    filter: brightness(1.1);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35); }
 
 .image-background img {
   object-fit: cover;
@@ -206,7 +210,8 @@ body {
 
 .heart-label {
   display: inline-block;
-  margin-left: 20px; }
+  margin-left: 20px;
+  cursor: pointer; }
   .heart-label .heart-checkbox {
     display: none; }
     .heart-label .heart-checkbox:checked + .heart-icon {
@@ -214,12 +219,23 @@ body {
     .heart-label .heart-checkbox:checked ~ .heart-icon-filled {
       display: inline;
       color: #cf64dc; }
+  .heart-label:hover .heart-icon {
+    display: none; }
+  .heart-label:hover .heart-icon-filled {
+    display: inline;
+    color: #cf64dc;
+    transform: scale(1.2);
+    opacity: 0; }
   .heart-label .heart-icon,
   .heart-label .heart-icon-filled {
     font-size: 25px;
-    display: inline; }
+    display: inline;
+    transition: opacity 0.7s ease;
+    opacity: 1; }
   .heart-label .heart-icon-filled {
     display: none; }
+    .heart-label .heart-icon-filled:hover {
+      opacity: 1; }
 
 .footer-menu {
   background-color: #353535;

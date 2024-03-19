@@ -1,6 +1,7 @@
 .heart-label {
   display: inline-block;
   margin-left: 20px;
+  cursor: pointer;
 
   .heart-checkbox {
     display: none;
@@ -15,13 +16,29 @@
     }
   }
 
+  &:hover .heart-icon {
+    display: none;
+  }
+
+  &:hover .heart-icon-filled {
+    display: inline;
+    color: #cf64dc;
+    transform: scale(1.2);
+    opacity: 0;
+  }
+
   .heart-icon,
   .heart-icon-filled {
     font-size: 25px;
     display: inline;
+    transition: opacity 0.7s ease;
+    opacity: 1;
   }
 
   .heart-icon-filled {
     display: none;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
