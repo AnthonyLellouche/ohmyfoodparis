@@ -71,24 +71,56 @@ body {
 .menu-grid_card {
   padding: 7px; }
 
-.plat-container {
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.05);
-  padding: 12px; }
-  .plat-container_name {
-    font-size: 18px;
-    font-weight: 500;
+.plat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em; }
+  .plat__card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.05);
     display: flex;
-    margin-bottom: 7px; }
-  .plat-container_footer {
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px; }
-    .plat-container_footer_surname {
-      font-weight: 300; }
-    .plat-container_footer_tarif {
+    flex-direction: row;
+    height: 4.5em;
+    overflow: hidden;
+    cursor: pointer; }
+    .plat__card__txt {
+      gap: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      flex: 1;
+      padding: 10px; }
+      .plat__card__txt--title {
+        font-weight: 500;
+        font-size: 18px;
+        margin: 0; }
+      .plat__card__txt--description {
+        font-weight: 300;
+        font-size: 15px;
+        margin: 0; }
+    .plat__card__price {
+      width: 4.3em;
+      display: flex;
+      padding-top: 2.3em;
+      justify-content: center;
       font-weight: 700; }
+    .plat__card__check {
+      width: 4.3em;
+      height: 100%;
+      margin-right: -4.3em;
+      background-color: #99e2d0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition-duration: 0.3s;
+      cursor: pointer; }
+    .plat__card:hover > .plat__card__check {
+      margin: 0;
+      transition: all 0.8s; }
+
+.fa-circle-check {
+  color: white; }
 
 /* Tablette */
 @media (max-width: 1024px) {
