@@ -71,17 +71,20 @@
       justify-content: space-evenly;
       flex: 1;
       padding: 10px;
+      @include ellipse;
 
       &--title {
         font-weight: 500;
         font-size: 18px;
         margin: 0;
+        @include ellipse;
       }
 
       &--description {
         font-weight: 300;
         font-size: 15px;
         margin: 0;
+        @include ellipse;
       }
     }
 
@@ -95,19 +98,18 @@
 
     &__check {
       width: 4.3em;
-      height: 100%;
       margin-right: -4.3em;
       background-color: $color-tertiary;
       display: flex;
       justify-content: center;
       align-items: center;
-      transition-duration: 0.3s;
+      transition-duration: 0.2s;
       cursor: pointer;
     }
 
     &:hover > .plat__card__check {
       margin: 0;
-      transition: all 0.8s;
+      transition: all 0.4s;
     }
   }
 }
