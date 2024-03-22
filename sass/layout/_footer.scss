@@ -29,6 +29,11 @@
   }
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /* Tablette */
 @media (max-width: $breakpoint-md) {
 }

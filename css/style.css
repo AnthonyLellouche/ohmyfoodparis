@@ -1,3 +1,21 @@
+@keyframes spin {
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    display: none; } }
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
 body {
   margin: 0 auto;
   max-width: 1440px; }
@@ -129,6 +147,18 @@ body {
 
 .fa-circle-check {
   color: white; }
+
+.section-meal {
+  opacity: 0;
+  animation-name: slideIn;
+  animation-fill-mode: forwards;
+  animation-duration: 1s; }
+  .section-meal#entrees {
+    animation-delay: 0.4s; }
+  .section-meal#plats {
+    animation-delay: 0.8s; }
+  .section-meal#desserts {
+    animation-delay: 1.2s; }
 
 /* Tablette */
 @media (max-width: 1024px) {
@@ -303,6 +333,10 @@ body {
     height: auto;
     margin-left: 60px; }
 
+a {
+  text-decoration: none;
+  color: white; }
+
 /* Tablette */
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -371,16 +405,6 @@ header {
     border-top-color: #99e2d0;
     border-bottom-color: #9356dc;
     animation: spin 1s linear infinite; }
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg); } }
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    display: none; } }
 
 .restaurant-section {
   background-color: #f6f6f6;

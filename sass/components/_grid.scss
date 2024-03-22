@@ -118,6 +118,25 @@
   color: white;
 }
 
+.section-meal {
+  opacity: 0;
+  animation-name: slideIn;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+
+  &#entrees {
+    animation-delay: 0.4s;
+  }
+
+  &#plats {
+    animation-delay: 0.8s;
+  }
+
+  &#desserts {
+    animation-delay: 1.2s;
+  }
+}
+
 /* Tablette */
 @media (max-width: $breakpoint-md) {
   .menu-grid {
