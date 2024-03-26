@@ -141,7 +141,7 @@ body {
       align-items: center;
       transition-duration: 0.2s;
       cursor: pointer; }
-    .plat__card:hover > .plat__card__check {
+    .plat__card:active > .plat__card__check {
       margin: 0;
       transition: all 0.4s; }
 
@@ -236,13 +236,13 @@ body {
   .restaurant-cards__new {
     background-color: #99e2d0;
     color: #008766;
-    width: 13%;
+    width: 50px;
     font-size: 14px;
     font-weight: 500;
     justify-content: center;
     display: flex;
     align-items: center;
-    padding: 7px;
+    padding: 7px 15px;
     position: absolute;
     top: 15px;
     right: 10px;
