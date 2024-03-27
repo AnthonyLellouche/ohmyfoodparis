@@ -6,7 +6,7 @@
   0% {
     opacity: 1; }
   100% {
-    display: none; } }
+    visibility: hidden; } }
 
 @keyframes slideIn {
   0% {
