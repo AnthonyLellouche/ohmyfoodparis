@@ -9,8 +9,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 595px;
+    position: relative;
+    top: calc(50% - 2px);
   }
   &__step {
     cursor: pointer;
@@ -44,11 +44,11 @@
 @media (max-width: $breakpoint-sm) {
   .functioning {
     &__number {
-      left: 2px;
-      top: 43px;
+      left: 10px;
     }
     &__step {
       padding: 25px;
+      margin-left: 0px;
     }
   }
 }

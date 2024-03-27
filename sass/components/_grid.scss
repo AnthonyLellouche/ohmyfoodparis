@@ -1,22 +1,26 @@
 .image-background {
+  display: flex;
+  justify-content: center;
+  position: relative;
   & img {
     object-fit: cover;
     width: 100%;
-    height: 315px;
+    height: 400px;
+    position: absolute;
   }
-}
-
-.section-meal {
-  padding-bottom: 40px;
 }
 
 .menu-grid {
   &_container {
+    display: flex;
     background-color: #f6f6f6;
-    padding: 0 180px 50px;
-    margin: -40px 100px 0;
+    padding: 0 30px 50px;
+    margin: 350px auto 0;
+    max-width: 70em;
     border-radius: 35px 35px 0 0;
     position: relative;
+    flex-flow: column;
+    gap: 2em;
   }
 
   &_title {
@@ -123,6 +127,9 @@
   animation-name: slideIn;
   animation-fill-mode: forwards;
   animation-duration: 1s;
+  max-width: 45em;
+  margin: auto;
+  width: 100%;
 
   &#entrees {
     animation-delay: 0.4s;
@@ -149,7 +156,7 @@
 @media (max-width: $breakpoint-sm) {
   .menu-grid {
     &_container {
-      margin: -40px 0;
+      margin: 260px 0 0;
       padding: 0 10px 50px;
     }
     &_title {
