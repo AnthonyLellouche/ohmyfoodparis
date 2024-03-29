@@ -38,8 +38,27 @@
   display: flex;
   justify-content: center;
   padding: 17px;
-  gap: 17px;
   font-weight: 500;
+  gap: 2px;
+
+  & i.fa-location-dot {
+    display: flex;
+    align-items: center;
+  }
+
+  & input {
+    background: none;
+    font-size: 1.125rem;
+    border: none;
+    text-align: center;
+    &:focus {
+      outline: 1px solid $color-primary;
+      border-radius: 5px;
+    }
+    &::placeholder {
+      color: black;
+    }
+  }
 }
 
 .functioning-section {

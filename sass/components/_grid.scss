@@ -50,6 +50,13 @@
 
   &_card {
     padding: 7px;
+
+    &__button {
+      border: none;
+      width: 100%;
+      background: none;
+      padding: 0;
+    }
   }
 }
 
@@ -64,17 +71,18 @@
     box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: row;
-    height: 4.5em;
+    height: 5.5em;
     overflow: hidden;
     cursor: pointer;
 
     &__txt {
-      gap: 5px;
+      text-align: left;
+      gap: 3px;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       flex: 1;
-      padding: 10px;
+      padding: 5px 15px;
       @include ellipse;
 
       &--title {
@@ -93,11 +101,13 @@
     }
 
     &__price {
+      font-size: 1rem;
       width: 4.3em;
       display: flex;
       padding-top: 2.3em;
       justify-content: center;
-      font-weight: 700;
+      font-weight: 500;
+      align-items: center;
     }
 
     &__check {

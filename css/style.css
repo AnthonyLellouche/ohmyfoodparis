@@ -94,6 +94,11 @@ body {
 
 .menu-grid_card {
   padding: 7px; }
+  .menu-grid_card__button {
+    border: none;
+    width: 100%;
+    background: none;
+    padding: 0; }
 
 .plat {
   display: flex;
@@ -105,16 +110,17 @@ body {
     box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: row;
-    height: 4.5em;
+    height: 5.5em;
     overflow: hidden;
     cursor: pointer; }
     .plat__card__txt {
-      gap: 5px;
+      text-align: left;
+      gap: 3px;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       flex: 1;
-      padding: 10px;
+      padding: 5px 15px;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden; }
@@ -133,11 +139,13 @@ body {
         text-overflow: ellipsis;
         overflow: hidden; }
     .plat__card__price {
+      font-size: 1rem;
       width: 4.3em;
       display: flex;
       padding-top: 2.3em;
       justify-content: center;
-      font-weight: 700; }
+      font-weight: 500;
+      align-items: center; }
     .plat__card__check {
       width: 4.3em;
       margin-right: -4.3em;
@@ -436,8 +444,21 @@ header {
   display: flex;
   justify-content: center;
   padding: 17px;
-  gap: 17px;
-  font-weight: 500; }
+  font-weight: 500;
+  gap: 2px; }
+  .logo__recherche i.fa-location-dot {
+    display: flex;
+    align-items: center; }
+  .logo__recherche input {
+    background: none;
+    font-size: 1.125rem;
+    border: none;
+    text-align: center; }
+    .logo__recherche input:focus {
+      outline: 1px solid #9356dc;
+      border-radius: 5px; }
+    .logo__recherche input::placeholder {
+      color: black; }
 
 .functioning-section {
   display: flex;
