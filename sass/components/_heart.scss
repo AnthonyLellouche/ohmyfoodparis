@@ -9,11 +9,6 @@
     &:checked + .heart-icon {
       display: none;
     }
-
-    &:checked ~ .heart-icon-filled {
-      display: inline;
-      color: #cf64dc;
-    }
   }
 
   &:hover .heart-icon {

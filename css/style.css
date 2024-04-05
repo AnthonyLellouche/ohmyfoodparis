@@ -305,9 +305,6 @@ body {
     display: none; }
     .heart-label .heart-checkbox:checked + .heart-icon {
       display: none; }
-    .heart-label .heart-checkbox:checked ~ .heart-icon-filled {
-      display: inline;
-      color: #cf64dc; }
   .heart-label:hover .heart-icon {
     display: none; }
   .heart-label:hover .heart-icon-filled {
