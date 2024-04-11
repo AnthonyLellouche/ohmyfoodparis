@@ -6,26 +6,21 @@ header {
   justify-content: center;
   margin: 25px;
   & img {
-    width: 200px;
+    width: 40%;
   }
   & i.fa-arrow-left {
     position: absolute;
     left: 30px;
-    top: 10px;
+    top: 7px;
     font-size: 25px;
     color: black;
   }
 }
 
-/* Tablette */
-@media (max-width: $breakpoint-md) {
-}
-
-/* Small devices (phones, less than 768px) */
-@media (max-width: $breakpoint-sm) {
+@media (min-width: $breakpoint-sm) {
   .logo {
     & img {
-      width: 50%;
+      width: 200px;
     }
   }
 }

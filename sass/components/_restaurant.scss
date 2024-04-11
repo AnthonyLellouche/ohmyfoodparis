@@ -3,13 +3,13 @@
   border-radius: 20px;
   position: relative;
   width: 100%;
-  flex: 1 1 calc(47% - 20px);
+  flex: 0 1 auto;
 }
 
 .restaurant-cards {
-  gap: 20px 70px;
+  gap: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
 
@@ -62,25 +62,14 @@
   }
 }
 
-/* Tablette */
-@media (max-width: $breakpoint-md) {
-}
-
-/* Small devices (phones, less than 768px) */
-@media (max-width: $breakpoint-sm) {
+@media (min-width: $breakpoint-sm) {
   .restaurant-cards {
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    a {
-      width: 100%;
-    }
-    & img {
-      width: 100%;
-      height: 190px;
-      object-fit: cover;
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-    }
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px 70px;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 70px);
   }
 }

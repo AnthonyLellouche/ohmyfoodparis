@@ -14,8 +14,8 @@
   &_container {
     display: flex;
     background-color: #f6f6f6;
-    padding: 0 30px 50px;
-    margin: 350px auto 0;
+    padding: 0 10px 50px;
+    margin: 260px auto 0;
     max-width: 70em;
     border-radius: 35px 35px 0 0;
     position: relative;
@@ -25,7 +25,7 @@
 
   &_title {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-right: 45px;
     padding-left: 15px;
@@ -50,13 +50,6 @@
 
   &_card {
     padding: 7px;
-
-    &__button {
-      border: none;
-      width: 100%;
-      background: none;
-      padding: 0;
-    }
   }
 }
 
@@ -155,22 +148,25 @@
 }
 
 /* Tablette */
-@media (max-width: $breakpoint-md) {
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
   .menu-grid {
     &_container {
       padding: 0 90px 50px;
     }
+    &_title {
+      justify-content: center;
+    }
   }
 }
 /* Small devices (phones, less than 768px) */
-@media (max-width: $breakpoint-sm) {
+@media (min-width: $breakpoint-md) {
   .menu-grid {
     &_container {
-      margin: 260px 0 0;
-      padding: 0 10px 50px;
+      padding: 0 30px 50px;
+      margin: 350px auto 0;
     }
     &_title {
-      justify-content: space-between;
+      justify-content: center;
     }
   }
 }
