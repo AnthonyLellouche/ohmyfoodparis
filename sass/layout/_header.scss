@@ -1,3 +1,5 @@
+@use "../abstracts/breakpoint" as bp;
+
 header {
   position: relative;
 }
@@ -17,7 +19,7 @@ header {
   }
 }
 
-@media (min-width: $breakpoint-sm) {
+@media (min-width: bp.$breakpoint-sm) {
   .logo {
     & img {
       width: 200px;

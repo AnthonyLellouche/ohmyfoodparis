@@ -1,3 +1,6 @@
+@use "../abstracts/breakpoint" as bp;
+@use "../abstracts/variables" as vars;
+
 .restaurant-section {
   background-color: #f6f6f6;
   display: flex;
@@ -54,7 +57,7 @@
     border: none;
     text-align: center;
     &:focus {
-      outline: 1px solid $color-primary;
+      outline: 1px solid vars.$color-primary;
       border-radius: 5px;
     }
     &::placeholder {
@@ -85,7 +88,7 @@
   }
 }
 
-@media (min-width: $breakpoint-sm) {
+@media (min-width: bp.$breakpoint-sm) {
   .logo__recherche {
     box-shadow: none;
   }
@@ -109,7 +112,7 @@
   }
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: bp.$breakpoint-md) {
   .restaurant-section,
   .functioning-section {
     padding: 30px 150px 70px;

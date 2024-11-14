@@ -1,19 +1,19 @@
-@import "abstracts/variables";
-@import "abstracts/breakpoint";
-@import "abstracts/mixin";
-@import "abstracts/keyframes";
+@use "abstracts/variables";
+@use "abstracts/breakpoint";
+@use "abstracts/mixin";
+@use "abstracts/keyframes";
 
-@import "base/base";
-@import "base/typography";
+@use "base/base";
+@use "base/typography";
 
-@import "components/button";
-@import "components/grid";
-@import "components/functioning";
-@import "components/restaurant";
-@import "components/heart";
+@use "components/button";
+@use "components/grid";
+@use "components/functioning";
+@use "components/restaurant";
+@use "components/heart";
 
-@import "layout/footer";
-@import "layout/header";
-@import "layout/loader";
+@use "layout/footer";
+@use "layout/header";
+@use "layout/loader";
 
-@import "pages/home";
+@use "pages/home";

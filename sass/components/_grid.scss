@@ -1,3 +1,7 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixin" as mix;
+@use "../abstracts/breakpoint" as bp;
+
 .image-background {
   display: flex;
   justify-content: center;
@@ -42,7 +46,7 @@
       display: block;
       width: 60%;
       height: 2px;
-      background-color: $color-tertiary;
+      background-color: vars.$color-tertiary;
       position: absolute;
       bottom: -8px;
     }
@@ -76,20 +80,20 @@
       justify-content: space-evenly;
       flex: 1;
       padding: 5px 15px;
-      @include ellipse;
+      @include mix.ellipse;
 
       &--title {
         font-weight: 500;
         font-size: 18px;
         margin: 0;
-        @include ellipse;
+        @include mix.ellipse;
       }
 
       &--description {
         font-weight: 300;
         font-size: 15px;
         margin: 0;
-        @include ellipse;
+        @include mix.ellipse;
       }
     }
 
@@ -106,7 +110,7 @@
     &__check {
       width: 4.3em;
       margin-right: -4.3em;
-      background-color: $color-tertiary;
+      background-color: vars.$color-tertiary;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -148,7 +152,7 @@
 }
 
 /* Tablette */
-@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+@media (min-width: bp.$breakpoint-sm) and (max-width: bp.$breakpoint-md) {
   .menu-grid {
     &_container {
       padding: 0 90px 50px;
@@ -159,7 +163,7 @@
   }
 }
 /* Small devices (phones, less than 768px) */
-@media (min-width: $breakpoint-md) {
+@media (min-width: bp.$breakpoint-md) {
   .menu-grid {
     &_container {
       padding: 0 30px 50px;

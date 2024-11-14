@@ -1,7 +1,10 @@
+@use "../abstracts/breakpoint" as bp;
+@use "../abstracts/variables" as vars;
+
 .functioning {
   &__number {
     font-size: 0.875rem;
-    background-color: $color-primary;
+    background-color: vars.$color-primary;
     border-radius: 50%;
     width: 25px;
     height: 25px;
@@ -31,13 +34,13 @@
       color: #7e7e7e;
       transition: 500ms;
       &:hover {
-        color: $color-primary;
+        color: vars.$color-primary;
       }
     }
   }
 }
 
-@media (min-width: $breakpoint-md) {
+@media (min-width: bp.$breakpoint-md) {
   .functioning {
     &__step {
       padding: 25px;
@@ -47,7 +50,7 @@
   }
 }
 
-@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+@media (min-width: bp.$breakpoint-sm) and (max-width: bp.$breakpoint-md) {
   .functioning {
     &__step {
       gap: 2px;
